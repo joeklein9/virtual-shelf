@@ -40,12 +40,21 @@ function App() {
   return (
    <>
     <Navbar />
-    <h1 className = "welcome-message">Welcome, Jennifer!</h1>
-     <form className = "input-form" onSubmit={handleSubmit}>
-            <input className ="input-area" type="text" onChange = {handleChange} placeholder="Enter book name or ISBN" />
-            <button className = "submit" type="submit">SEARCH</button>
-      </form>
+    <div className = "welcome-input-container">
+      <div className = "welcome-input">
+        <h1 className = "welcome-message">Welcome, Jennifer!</h1>
+        <form className = "input-form" onSubmit={handleSubmit}>
+          <input className ="input-area" type="text" onChange = {handleChange} placeholder="Enter book name or ISBN" />
+          <button className = "submit" type="submit">SEARCH</button>
+        </form>
+  
+      </div>
       <Bookshelf />
+     </div>
+      
+
+    
+    
     
 
    </>
